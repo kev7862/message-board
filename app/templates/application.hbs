@@ -1,2 +1,11 @@
-<h1>Question and Answer message board</h1>
+<div class="jumbotron">
+    <h1>Question and Answer Message Board</h1>
+  <nav>
+    {{#link-to 'index'}}HOME{{/link-to}} /
+    {{#link-to 'about'}}ABOUT{{/link-to}} /
+    {{#link-to 'contact'}}CONTACT{{/link-to}}
+  </nav>
+</div>
+<div class="container-fluid">
 {{outlet}}
+</div>
