@@ -1,5 +1,7 @@
-# message-board
-
+# Project Name.
+## Question and answer Message Board.
+# Author.
+## Kevin Matite.
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
