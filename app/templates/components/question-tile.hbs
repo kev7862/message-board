@@ -2,8 +2,8 @@
   <blockquote class="blockquote">
     <p class="mb-0">{{#link-to 'question' question.id}}{{question.content}}{{/link-to}}</p>
     <footer class="blockquote-question">
-      <strong>{{question.author}}</strong><br>{{question.content}}
+      <strong>{{question.author}}</strong>
     </footer>
-    <button type="button" name="button"{{action 'delete' question}}>Delete</button>
+    <button id="delete-question-button" class="btn btn-danger" {{action 'delete' question}}>Delete</button>
   </blockquote>
 </li>
