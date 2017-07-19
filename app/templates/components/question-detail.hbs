@@ -1,19 +1,21 @@
 <br>
 <div class="well">
   <h2>{{question.content}}</h2>
-  <h4>posted by- <span style="color:#FF6B6B">{{question.date}}</span></h4>
-  on<span style="color:black; font-">{{question.date}}</span>
+  <h4> Posted by- <span style="color:#FF6B6B">{{question.author}}</span></h4>
+ on <span style="color:black; font-">{{question.date}}</span>
   <h4 class="q-notes">{{question.notes}}</h4>
-  {{update-question  question=question update="update"}}
-  <br>
+   {{update-question question=question update="update"}}
+   <br>
+   <button id="delete-question-button" class="btn btn-danger" {{action 'delete' question}}>Delete</button>
 </div>
+
 <div class="row">
   <div class="col-md-9">
-    <h2>Answers</h2>
+    <h2> Answers </h2>
     <hr>
     <ul>
       {{#each question.answers as |answer|}}
-      {{anwers-tile answer=answer destroyAnswer="destroyAnswer"}}
+      {{answer-tile answer=answer destroyAnswer="destroyAnswer" upvoteAnswer="upvoteAnswer" downvoteAnswer="downvoteAnswer"}}
       {{/each}}
     </ul>
   </div>

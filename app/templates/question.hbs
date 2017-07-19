@@ -1,4 +1,11 @@
-{{question-detail question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" upvoteAnswer="upvoteAnswer" downvoteAnswer="downvoteAnswer"}}
+<!-- *********************************** -->
+<!-- Here we are defining all the actions that we are performing on question and answer models. -->
+<!-- Following is the high level definition of each of the actions.
+update - Updates the question
+destroyQuestion - Deletes the question
+destroyAnswer - Deletes the selected answer for a question
+upvoteAnswer - Increments the upvotes for the selected answer -->
+ {{question-detail question=model update="update" destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" upvoteAnswer="upvoteAnswer" downvoteAnswer="downvoteAnswer"}}
 
 <h1>Add answer to this question?</h1>
 {{new-answer saveAnswer="saveAnswer" question=model}}
